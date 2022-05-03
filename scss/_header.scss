@@ -1,0 +1,44 @@
+header {
+  background: linear-gradient(to right, #ff6060, rgb(255, 255, 0));
+  grid-area: header;
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover {
+      transform: rotatex(360deg);
+      transition: 2s;
+    }
+    .header__image {
+      display: inline-block;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      width: 6rem;
+    }
+  }
+  .desktop__nav {
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 0.3rem;
+
+    a {
+      text-decoration: none;
+      color: rgb(66, 64, 64);
+      @media (min-width: 768px) {
+        text-decoration: none;
+        color: black;
+        &:hover {
+          color: map-get($palette, main-color);
+        }
+      }
+    }
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-bottom: 0.3rem;
+    }
+  }
+}

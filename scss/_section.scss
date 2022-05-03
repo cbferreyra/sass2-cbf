@@ -1,0 +1,36 @@
+section {
+  background-color: lightgray;
+  grid-area: section;
+  background-image: url(../imagenes/pizzalunaportada.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 540px;
+  .header__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+      display: inline-block;
+      margin-top: 1.5rem;
+      text-decoration: none;
+      color: black;
+      &:hover {
+        color: map-get($palette, main-color);
+      }
+    }
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  .hero__text {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-top: 3rem;
+
+    @media (min-width: 768px) {
+      font-size: 4rem;
+      margin-top: 10rem;
+    }
+  }
+}
