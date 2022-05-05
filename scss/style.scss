@@ -1,5 +1,7 @@
-@import "general";
-@import "variables";
+/*Reset variables mixins*/
+@import "base";
+
+/*BODY*/
 
 body {
   display: grid;
@@ -14,7 +16,33 @@ body {
   img {
     max-width: 100%;
   }
-  @import "header";
-  @import "section";
-  @import "footer";
+  @import "index";
+
+  .hero_container {
+    background-image: url(../imagenes/pizzalunaportada.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 540px;
+  }
+}
+.menu_section {
+  background-color: lightgray;
+
+  .section__title {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  .submenu {
+    display: inline block;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+  }
+  .menuContainer {
+    @include display(flex, column, center, space-between);
+  }
 }

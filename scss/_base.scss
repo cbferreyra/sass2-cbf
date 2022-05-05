@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$palette: (
+  main-color: red,
+  secondary-color: lightgray,
+  letter-color: black,
+);
+@mixin display($dpy, $flex-d, $align-i, $jtf-cnt) {
+  display: $dpy;
+  flex-direction: $flex-d;
+  align-items: $align-i;
+  justify-content: $jtf-cnt;
+}

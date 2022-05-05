@@ -1,0 +1,110 @@
+/*HEADER*/
+header {
+  background: linear-gradient(to right, #ff6060, rgb(255, 255, 0));
+  grid-area: header;
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover {
+      transform: rotatex(360deg);
+      transition: 2s;
+    }
+    .header__image {
+      display: inline-block;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      width: 6rem;
+    }
+  }
+  .desktop__nav {
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 0.3rem;
+
+    a {
+      text-decoration: none;
+      color: rgb(66, 64, 64);
+      @media (min-width: 768px) {
+        text-decoration: none;
+        color: black;
+        &:hover {
+          color: map-get($palette, main-color);
+        }
+      }
+    }
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-bottom: 0.3rem;
+    }
+  }
+}
+
+/*SECTION*/
+
+section {
+  grid-area: section;
+
+  .header__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+      display: inline-block;
+      margin-top: 1.5rem;
+      text-decoration: none;
+      color: black;
+      &:hover {
+        color: map-get($palette, main-color);
+      }
+    }
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  .hero__text {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-top: 3rem;
+
+    @media (min-width: 768px) {
+      font-size: 4rem;
+      margin-top: 10rem;
+    }
+  }
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: map-get($palette, main-color);
+  grid-area: footer;
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footer__text {
+      margin: 1rem;
+    }
+  }
+  .footer__credits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      display: inline;
+      width: 3rem;
+      text-align: center;
+    }
+    p {
+      font-size: 0.6rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
