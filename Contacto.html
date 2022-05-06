@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Contacto, Pizzaluna, opinion, reseña, reclamo, solicitud">
+    <meta name="description" content="Contactate con nosotros para que podamos brindarte la mejor atención">
+    <title>Pizzaluna Contacto</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img
+            class="header__image"
+            src="imagenes/logoPizzaluna.svg"
+            alt="logo de la marca"
+          />
+        </a>
+      </div>
+      <nav>
+        <div class="desktop__nav">
+          <a href="index.html">INICIO</a>
+          <a href="menu.html">MENÚ</a>
+          <a href="Promociones.html">PROMOCIONES</a>
+          <a href="Contacto.html">CONTACTO</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Section -->
+    <section>
+        <form class="formContactUs" action="">
+            <fieldset>
+              <legend class="form__legend">Contacto</legend>
+              <label class="form__text" for="name">Nombre:</label>
+              <input class="fieldText" type="text" name="nombre" id="nombre" />
+      
+              <label class="form__text" for="name">Apellido:</label>
+              <input class="fieldText" type="text" name="apellido" id="apellido" />
+      
+              <label class="form__text" for="name">e-mail</label>
+              <input class="fieldText" type="email" name="correo" id="correo" />
+      
+              <label class="form__text" for="name">Teléfono</label>
+              <input class="fieldText" type="tel" name="telefono" id="telefono" />
+      
+              <div class="form__text">Soy cliente</div>
+              <input type="radio" name="cliente" value="si" />
+              <div class="form__text">No soy cliente</div>
+              <input type="radio" name="cliente" value="no" />
+              <div class="form__text">¿Por qué nos contactás?</div>
+              <select name="motivo" id="motivo">
+               <div class="option">
+                <option value="seleccione">Seleccione el motivo de consulta</option>
+                <option value="consulta">Quiero hacer una consulta</option>
+                <option value="reclamo">Quiero hacer un reclamo</option>
+              </select>
+               </div> 
+      <div class="textArea__label">
+        <label class="form__text" for="mensaje">Mensaje</label>
+      </div>
+             
+              
+              <textarea
+                class="textarea"
+                name="mensaje"
+                id="mensaje"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <br />`
+              <input type="submit" value="Enviar" />
+              <input type="reset" value="Limpiar formulario" />
+              <div class="checkAceptacion">
+                <input type="checkbox" name="acepta" id="acepta" value="1" /> Acepto
+                los <a href="Terminosycondiciones.html">términos y condiciones</a>
+              </div>
+            </fieldset>
+          </form>  
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__text">Seguinos en nuestras redes</div>
+        <div class="footer__icons">
+          <img
+            src="imagenes/black_social_media_instagram_icon.png"
+            alt="logo instagram"
+          />
+          <img src="imagenes/black_fb_social_icon.png" alt="logo facebook" />
+        </div>
+      </div>
+
+      <div class="footer__credits">
+        <img
+          class="footer__image"
+          src="imagenes/logoPizzaluna.svg"
+          alt="logo de la marca "
+        />
+        <p>Developed by Cristian Ferreyra</p>
+      </div>
+    </footer>
+  </body>
+</html>
